@@ -1,0 +1,35 @@
+.main-screen{
+    background: url(../img/main-bg.jpg) center (center / cover) no-repeat;
+    min-height: 100vh;
+    position: relative;
+    &__burger{
+        width: 60px;
+        height: 50px;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        cursor: pointer;
+        span{
+            position: relative;
+            display: block;
+            height: 3px;
+            background-color: white;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        &::before,
+        &::after{
+            content: '';
+            height: 3px;
+            width: 100%;
+            background-color: white;
+            position: absolute;
+        }
+        &::after{
+            top: 0;
+        }
+        &::before{
+            bottom: 0;
+        }
+    }
+}
