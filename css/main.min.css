@@ -87,6 +87,10 @@ li {
   transition: all .3s linear;
 }
 
+.main-screen__burger.active::before, .main-screen__burger.active::after {
+  display: none;
+}
+
 .main-screen__drawing {
   width: 100%;
   height: 100%;
@@ -100,6 +104,8 @@ li {
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
 }
 
 .main-screen__drawing::after, .main-screen__drawing::before {
@@ -108,6 +114,8 @@ li {
   height: 3px;
   background-color: white;
   position: absolute;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
 }
 
 .main-screen__drawing::before {
@@ -116,6 +124,22 @@ li {
 
 .main-screen__drawing::after {
   bottom: 0;
+}
+
+.main-screen__drawing.active::before {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 50%;
+}
+
+.main-screen__drawing.active::after {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 50%;
+}
+
+.main-screen__drawing.active span {
+  display: none;
 }
 
 .main-screen__menu {
