@@ -1,0 +1,38 @@
+*:hover,
+*:after,
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-size: 18px;
+	color: black;
+	line-height: 27px;
+	font-family: 'Roboto', sans-serif;
+	//position: relative;
+}
+
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+	margin: 0;
+	padding: 0;
+}
+
+ul,
+li{
+	margin: 0;
+	padding: 0;
+}
+
+li{
+	list-style: none;
+}
+
+@import 'base/mixins';
+@import 'base/variables';
+@import 'blocks/main-screen';
