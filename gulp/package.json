@@ -1,7 +1,7 @@
 {
-  "name": "new-project",
+  "name": "Responsive menu",
   "version": "1.0.0",
-  "description": "my first project gulp",
+  "description": "Responsive menu",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
